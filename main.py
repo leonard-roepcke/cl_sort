@@ -23,7 +23,10 @@ def main():
         iterations += 1
 
     print(arr)
-    print(f"Sorted in {iterations} iterations")
+    if(algrorithm == 3):
+        print(f"Sorted in unnown iterations")
+    else:
+        print(f"Sorted in {iterations} iterations")
         
 def chose_sort():
     while True:
