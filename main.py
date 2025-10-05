@@ -16,6 +16,8 @@ def main():
         elif algrorithm == 2:
             arr = swap_sort(arr, i1)
             i1 += 1
+        elif algrorithm == 3:
+            arr = inhouse_sort(arr)
         
         
         iterations += 1
@@ -25,9 +27,9 @@ def main():
         
 def chose_sort():
     while True:
-        algrorithm = input("Choose sorting algorithm (1:random_sort, 2:swap_sort): ")
+        algrorithm = input("Choose sorting algorithm (1:random_sort, 2:swap_sort 3:inhouse_sort): ")
         try:
-            if 1<=int(algrorithm)<=2:
+            if 1<=int(algrorithm)<=3:
                 return int(algrorithm)
         except:
             pass
@@ -52,6 +54,9 @@ def swap_sort(arr, i1):
         else:
             print("   ", end="")
     return arr_copy
+
+def inhouse_sort(arr):
+    return sorted(arr)
     
 
 
